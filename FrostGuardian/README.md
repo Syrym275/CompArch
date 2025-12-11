@@ -5,7 +5,7 @@ AI Edge Disease Detection for Cold Environments — prototype
 This repo contains a minimal, end-to-end prototype: training scripts, TFLite conversion, a device-side inference example (Raspberry Pi / Linux), a tiny backend, and a simple frontend stub.
 
 
-## Quick start (device demo-only)
+## Quick start 
 1. Install device dependencies: `pip install -r device/requirements.txt`
 2. Run: `python device/demo_record_and_infer.py`
 
@@ -18,14 +18,12 @@ This repo contains a minimal, end-to-end prototype: training scripts, TFLite con
 
 
 ## License
-MIT---
+MIT
 
 
-### Devpost.md (Copy to Devpost description)
+### Devpost.md 
 
 
-```markdown
-# FrostGuardian — Devpost Submission Text
 
 
 **Title:** FrostGuardian — AI Edge Disease Detection for Cold Environments
@@ -34,7 +32,6 @@ MIT---
 **Short description:** Portable edge device that analyzes cough/breath audio and skin temperature to provide early warning of respiratory illness. Works fully offline using TinyML and syncs results when connectivity becomes available.
 
 
-(Use this file to paste the content into your Devpost submission fields: what it does, tech stack, demo, and links.)
 
 
 ## model/train.py
@@ -106,6 +103,6 @@ total_loss += loss.item()
 print(f"Epoch {e+1}/{EPOCHS} loss={total_loss/len(loader):.4f}")
 
 
-# Save PyTorch model (we'll convert later)
+# Save PyTorch model 
 torch.save(model.state_dict(), 'model.pt')
 print('Saved model.pt')
